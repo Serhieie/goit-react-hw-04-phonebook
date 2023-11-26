@@ -2,7 +2,7 @@ import { LiaUserEditSolid } from 'react-icons/lia';
 import { FiPhoneMissed } from 'react-icons/fi';
 import { Field } from 'formik';
 
-export default function Input() {
+export function Input() {
   return (
     <>
       <label

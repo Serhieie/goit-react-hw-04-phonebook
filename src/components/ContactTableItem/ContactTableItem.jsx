@@ -1,12 +1,12 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import normalizePhoneNumber from '../../helpers/numberNormalize';
 import { AiOutlineUserDelete } from 'react-icons/ai';
 import Modal from 'react-modal';
-import { settings } from 'constants/deleteModalSettings';
+import { settings } from 'helpers/deleteModalSettings';
 
 Modal.setAppElement('#root');
 
-export default function ContactTableItem({ contact, index, onDeleteContact }) {
+export function ContactTableItem({ contact, index, onDeleteContact }) {
   const windowWidth = window.innerWidth;
   const [modalIsOpen, setIsOpen] = useState(false);
   const subtitle = useRef();

@@ -1,7 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Filter({ value, onChange }) {
+export function Filter({ value, onChange }) {
   return (
     <label
       className="bg-filterLabelColor w-[58%] mx-auto mb-2 mt-5 py-1 px-5

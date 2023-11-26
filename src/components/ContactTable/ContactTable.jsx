@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import ContactTableItem from '../ContactTableItem';
+import { ContactTableItem } from '../ContactTableItem/ContactTableItem';
 
-export default function ContactTable({ getVisibleContacts, onDeleteContact }) {
+export function ContactTable({ getVisibleContacts, onDeleteContact }) {
   return (
     <div className="overflow-x-auto md:w-full">
       <table
@@ -63,6 +63,6 @@ ContactTable.propTypes = {
       name: PropTypes.string.isRequired,
       number: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
   onDeleteContact: PropTypes.func.isRequired,
 };

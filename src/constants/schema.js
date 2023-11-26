@@ -14,6 +14,6 @@ export const schema = yup.object().shape({
     .required()
     .matches(
       /^\+?(\d{2}-?\d{3}-?\d{3}-?\d{2}-?\d{2})$|^\d{7}$|^\d{10}$|^\+?\d{12}$/,
-      'Number must have 7 numbers or 7 numbers and codes'
+      `Number must have 7, 10 or 12 digits`
     ),
 });
