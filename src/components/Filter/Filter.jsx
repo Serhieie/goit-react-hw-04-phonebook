@@ -11,7 +11,7 @@ export function Filter({ value, onChange }) {
         type="text"
         filter={value}
         onChange={event => {
-          onChange(event);
+          onChange(event.currentTarget.value);
         }}
         className="placeholder:opacity-50 flex text-4 font-medium bg-lightPartsColor
         text-darkFont border-none outline-none w-11/12 max-w-[480px] h-10 rounded 

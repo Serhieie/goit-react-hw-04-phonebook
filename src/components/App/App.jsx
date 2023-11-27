@@ -26,10 +26,6 @@ export function App() {
     );
   };
 
-  const changeFilter = event => {
-    setFilter(event.currentTarget.value);
-  };
-
   const getVisibleContacts = () => {
     const normalizedFilter = filter.toLowerCase();
     return contacts.filter(contact =>
@@ -60,7 +56,7 @@ export function App() {
           opacity-40 z-10 text-filterPlaceholderColor md:w-5 md:h-5 
           md:top-16 md:left-1/4 md2:max-w-sm md2:top-9 md2:left-1/5 ssm:hidden"
         />
-        <Filter forFilter={filter} onChange={changeFilter} />
+        <Filter forFilter={filter} onChange={setFilter} />
         <ContactTable
           getVisibleContacts={visibleContacts}
           onDeleteContact={deleteContact}
